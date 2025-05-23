@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Luis Eduardo - Resume</title>
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.4;
+			margin: 0;
+			padding: 0;
+			background: #f4f4f4;
+			color: #333;
+			font-size: 14px;
+			transition: background-color 0.3s ease;
+		}
+
+		body:hover {
+			background-color: #e9ecef;
+		}
+
+		.container {
+			max-width: 900px;
+			margin: auto;
+			background: #fff;
+			padding: 20px 30px;
+			box-sizing: border-box;
+			transition: box-shadow 0.3s ease;
+		}
+
+		.container:hover {
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		h1,
+		h2,
+		h3 {
+			color: #222;
+			margin: 0.4em 0;
+			transition: color 0.3s ease;
+		}
+
+		/* New subtitle style */
+		.subtitle {
+			font-size: 1.2em;
+			font-weight: 400;
+			color: #555;
+			margin-top: -8px;
+			margin-bottom: 16px;
+			font-style: italic;
+			letter-spacing: 0.05em;
+			transition: color 0.3s ease;
+		}
+
+		h1:hover,
+		.subtitle:hover {
+			color: #007acc;
+		}
+
+		a {
+			color: #007acc;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			color: #005fa3;
+		}
+
+		.section {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			border-bottom: 1px solid #ccc;
+			page-break-inside: avoid;
+			transition: background-color 0.3s ease;
+		}
+
+		.section:hover {
+			background-color: #f0f8ff;
+		}
+
+		.section:last-child {
+			border-bottom: none;
+		}
+
+		.skills {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 6px;
+		}
+
+		.skills li {
+			background: #eee;
+			padding: 6px 12px;
+			border-radius: 20px;
+			font-size: 12px;
+			cursor: default;
+			transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+		}
+
+		/* Cute hover effect for skill bubbles */
+		.skills li:hover {
+			background-color: #ccc;
+			color: #333;
+			transform: scale(1.1);
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+		}
+
+		.contact {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 12px;
+			row-gap: 4px;
+			font-size: 13px;
+		}
+
+		.job {
+			margin-bottom: 10px;
+			transition: background-color 0.3s ease;
+			cursor: default;
+		}
+
+		.job:hover {
+			background-color: #f9fbfd;
+		}
+
+		.job h3 {
+			margin-bottom: 4px;
+			font-size: 1em;
+		}
+
+		.job span {
+			font-style: italic;
+			font-size: 0.9em;
+			color: #666;
+		}
+
+		ul {
+			margin: 0;
+			padding-left: 18px;
+		}
+
+		@media print {
+			@page {
+				size: Letter;
+				margin: 0.5in;
+			}
+
+			body {
+				background: #fff;
+				color: #000;
+				font-size: 11px;
+				line-height: 1.2;
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				color: #000;
+				text-decoration: none;
+			}
+
+			.container {
+				box-shadow: none;
+				padding: 10px 15px;
+				margin: 0;
+				width: 100%;
+			}
+
+			.skills li {
+				font-size: 9px;
+				padding: 2px 5px;
+			}
+
+			.section {
+				page-break-inside: avoid;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				border-bottom: 1px solid #bbb;
+			}
+
+			.contact {
+				grid-template-columns: repeat(4, 1fr);
+				column-gap: 10px;
+				row-gap: 2px;
+				font-size: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Luis Eduardo</h1>
+		<div class="subtitle">Full-Stack Software Developer</div>
+		<div class="section contact">
+			<div><strong>Phone:</strong> +1 829-810-5688</div>
+			<div><strong>Email:</strong> <a href="mailto:undernet1@gmail.com">undernet1@gmail.com</a></div>
+			<div><strong>Location:</strong> Santo Domingo, Dominican Republic</div>
+			<div><strong>LinkedIn:</strong> <a
+					href="https://www.linkedin.com/in/luis-alberto-eduardo-gonzalez-a41213128/" target="_blank">LinkedIn
+					Profile</a></div>
+			<div><strong>Github:</strong> <a href="https://github.com/leduardo11" target="_blank">leduardo11</a></div>
+		</div>
+
+		<div class="section">
+			<h2>Profile & Languages</h2>
+			<p>Web developer with a learner mindset and customer-first approach, focused on best practices and clear
+				communication.</p>
+			<ul class="skills">
+				<li>English (C2)</li>
+				<li>Spanish (Native)</li>
+			</ul>
+		</div>
+
+		<div class="section">
+			<h2>Work Experience</h2>
+			<div class="job">
+				<h3>Sr. Full-Stack Developer - Grupo Ramos</h3>
+				<span>10/2024 - Current</span>
+				<ul>
+					<li>Reviewed and approved pull requests to keep the team’s code clean, consistent, and reliable.
+					</li>
+					<li>Built and deployed new features and services, focusing on making them scalable and easy to
+						maintain.</li>
+					<li>Diagnosed and fixed tough bugs, including those in legacy systems, to keep everything running
+						smoothly.</li>
+					<li>Helped and mentored junior developers with system design, architecture, and best coding
+						practices.</li>
+					<li>Worked closely with different teams and stakeholders to align on project goals and deliver on
+						time.</li>
+					<li>Maintained legacy code while gradually modernizing it to improve performance and
+						maintainability.</li>
+					<li>Set up local dev environments and configured Azure pipelines to simplify and automate
+						deployments.</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<h3>Full-Stack Developer - NewTech Global</h3>
+				<span>03/2023 - 09/2024</span>
+				<ul>
+					<li>Developed and maintained features for a .NET and Angular 15+ web app within an Agile team.</li>
+					<li>Designed and built reusable Angular components to improve UI consistency and speed up
+						development.</li>
+					<li>Investigated and fixed bugs across both front-end and back-end to keep the app stable and
+						reliable.</li>
+					<li>Collaborated closely with product owners and QA to deliver user-focused, high-quality features
+						on
+						schedule.</li>
+					<li>Worked on the development and integration of a rule engine API, allowing for flexible business
+						logic
+						configuration.</li>
+					<li>Took part in sprint planning, code reviews, and daily stand-ups to stay aligned and ensure
+						steady
+						progress.</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<h3>Backend Developer - CBP Consulting</h3>
+				<span>03/2023 - 09/2024</span>
+				<ul>
+					<li>Enhanced a medical prescription processing app for US customers using Elixir and PostgreSQL.
+					</li>
+					<li>Refactored codebase to improve readability, reduce technical debt, and boost backend
+						performance.</li>
+					<li>Resolved complex issues in collaboration with frontend teams to ensure seamless user experience.
+					</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<h3>Software Developer - Evopoint Solutions</h3>
+				<span>03/2022 - 11/2022</span>
+				<ul>
+					<li>Worked on multiple projects using React, SharePoint Online, AngularJS, and ASP.NET to deliver
+						modular and
+						integrated solutions.</li>
+					<li>Built custom intranet solutions tailored to enterprise clients’ needs.</li>
+					<li>Automated workflows and internal processes using Power Automate and Microsoft 365 tools.</li>
+				</ul>
+			</div>
+
+			<div class="job">
+				<h3>Webmaster - Grupo Universal</h3>
+				<span>10/2018 - 02/2022</span>
+				<ul>
+					<li>Maintained legacy applications and developed web forms using ASP.NET 3.5 and .NET Framework 3.5.
+					</li>
+					<li>Managed and customized SharePoint CMS platforms to improve internal communication and
+						efficiency.</li>
+					<li>Developed tailored JS/ASP.NET solutions integrated with legacy SharePoint 2010 infrastructure.
+					</li>
+					<li>Collaborated with design and marketing teams to align digital initiatives with business goals.
+					</li>
+					<li>Led internal training sessions to upskill teams on SharePoint usage and workflow automation.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section">
+			<h2>Skills</h2>
+			<ul class="skills">
+				<li>Elixir</li>
+				<li>C++ (Raylib, SDL)</li>
+				<li>.NET (C#, ASP, SharePoint)</li>
+				<li>JavaScript, TypeScript</li>
+				<li>Angular 12+, AngularJS</li>
+				<li>ReactJs 16+</li>
+				<li>HTML5/CSS3</li>
+				<li>MSSQL Server</li>
+				<li>Microsoft Azure</li>
+				<li>Docker</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+
+</html>
